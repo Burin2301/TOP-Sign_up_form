@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/odin-lined.png" type="image/x-icon">
+    <script src="./script.js" defer></script>
+    <title>TOP form</title>
+</head>
+<body>
+    <aside class="aside-left">
+        <img class="aside-left-img" src="./assets/spooky_mountain.jpg" alt="background">
+        <div class="opacity">
+            <figure class="figure">
+                <img class="figure-logo" src="./assets/odin-lined.png" alt="logo" width="55px" height="55px">
+            </figure>
+        </div>
+        <p class="image-credit">Picture by eberhard grossgasteiger: <a href="https://www.pexels.com/es-es/foto/paisaje-horror-escalofriante-fantasia-12365978/"></a> https://www.pexels.com/es-es/foto/paisaje-horror-escalofriante-fantasia-12365978/</p>
+    </aside>
+    <main class="righ-side">
+        <div class="upper-text">
+            <p>
+                This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+            </p>
+            <p>
+                Sign up <span class="italic">now </span> to get started.
+            </p>
+            <p>
+                You <span class="italic">know </span> you want to.
+            </p>
+        </div>
+
+        <div class="log-in-form">
+            <h2>Let's do this!</h2>
+            <form action="createAccount" class="new-user-form" id="newUserForm">
+                <div class="division">
+                    <label for="userFirstName">FIRST NAME</label>
+                    <input id="userFirstName" type="text" placeholder="John" class="focus" required>
+    
+                    
+                    <label for="userEmail">EMAIL</label>
+                    <input id="userEmail" type="text" placeholder="email@text.com" class="focus" required>
+                    
+                    <label for="userPassword">PASSWORD</label>
+                    <input id="userPassword" class="error" type="password" placeholder="********" required>
+                </div>
+                
+                <div class="division">
+                    
+                    <label for="userLastName">LAST NAME</label>
+                    <input id="userLastName" type="text" placeholder="Doe" class="focus" required>
+
+                    <label for="userPhoneNumber">PHONE NUMBER</label>
+                    <input id="userPhoneNumber" type="text" placeholder="+1 555 0125" class="focus" required>
+    
+    
+                    <label for="userPasswordConfirm">CONFIRM PASSWORD</label>
+                    <input id="userPasswordConfirm" class="error" type="password" placeholder="********" required>
+                </div>
+
+            </form>
+
+        </div>
+
+        <div class="login">
+            <button id="createAccountBtn">Create Account</button>
+            <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+    </main>
+    
+</body>
+</html>

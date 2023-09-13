@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+}
+html{
+    --wenge: hsla(342, 5%, 37%, 1);
+    --red: hsla(360, 83%, 65%, 1);
+    --white: hsla(202, 20%, 92%, 1);
+    --wheat: hsla(25, 53%, 67%, 1);
+    --primary: hsla(180, 55%, 31%, 1);
+    --focus: hsl(180, 40%, 47%);
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+/* LEFT SIDE */
+.aside-left{
+    width: 40%;
+    height: 100vh;
+    position: relative;
+    background-image: url(./assets/spooky_mountain.jpg);
+}
+.aside-left-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.aside-left>.image-credit{
+    position: absolute;
+    bottom: calc(5%);
+    color: var(--white);
+    font-size: 10px;
+    opacity: .3;
+    text-align: center;
+}
+.opacity{
+    opacity: 0.7;
+}
+.figure{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    position: absolute;
+    top: calc(35%);
+    display: grid;
+    place-content: center;
+}
+
+/* RIGHT SIDE   */
+.righ-side{
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 35% 1fr 35%;
+}
+
+
+.upper-text{
+    font-weight: 600;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-color: whitesmoke;
+    font-size: 1.8em;
+}
+.upper-text>p:last-child{
+    padding-top: 20px;
+}
+.italic{
+    font-style: italic;
+}
+
+
+.log-in-form{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: baseline;
+    padding: 10px 30% 20px 50px;
+    overflow-y: scroll;
+}
+.new-user-form{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    column-gap: 60px;
+}
+h2{
+    margin-bottom: 20px;
+}
+input{
+    font-size: 20px;
+    border-radius: 4px;
+    padding: 4px;
+    margin-bottom: 10px;
+    border: 1px solid var(--primary);
+}
+label{
+    font-weight: 600;
+}
+.division{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+}
+
+
+
+
+
+
+
+
+.login{
+    background-color: whitesmoke;
+    height: 100%;
+    padding: 40px 50px;
+}
+
+.login> button{
+    padding: 12px 40px;
+    background-color: var(--primary);
+    color: white;
+    font-size: 1.2em;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.login>p{
+    font-weight: 600;
+}
+.login>p>a{
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+
+
+.error{
+    border: 1px solid var(--red);
+}
+.focus:focus{
+    color: var(--focus);
+    box-shadow: 5px 5px;
+    border-color: var(--focus);
+}
