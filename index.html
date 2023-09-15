@@ -37,30 +37,45 @@
         <div class="log-in-form">
             <h2>Let's do this!</h2>
             <form action="createAccount" class="new-user-form" id="newUserForm">
-                <div class="division">
-                    <label for="userFirstName">FIRST NAME</label>
-                    <input id="userFirstName" type="text" placeholder="John" class="focus" required>
+
+                <div class="form-item-row">
+                    <div class="form-item">
+                        <label for="userFirstName">FIRST NAME</label>
+                        <input id="userFirstName" type="text" placeholder="John" class="focus" minlength="3" maxlength="20" required>
+                    </div>
+                    
+                    <div class="form-item">
+                        <label for="userLastName">LAST NAME</label>
+                        <input id="userLastName" type="text" placeholder="Doe" class="focus" minlength="3" maxlength="20" required>
+                    </div>
+                </div>
+                                
+                <div class="form-item-row">
+                    <div class="form-item">
+                        <label for="userEmail">EMAIL</label>
+                        <input id="userEmail" type="text" placeholder="email@text.com" class="focus" minlength="3" maxlength="200" required>
+                    </div>                
     
-                    
-                    <label for="userEmail">EMAIL</label>
-                    <input id="userEmail" type="text" placeholder="email@text.com" class="focus" required>
-                    
-                    <label for="userPassword">PASSWORD</label>
-                    <input id="userPassword" class="error" type="password" placeholder="********" required>
+                    <div class="form-item">
+                        <label for="userPhoneNumber">PHONE NUMBER</label>
+                        <input id="userPhoneNumber" type="text" placeholder="+1 555 0125" class="focus" minlength="3" maxlength="11" required>
+                    </div>
+
                 </div>
                 
-                <div class="division">
-                    
-                    <label for="userLastName">LAST NAME</label>
-                    <input id="userLastName" type="text" placeholder="Doe" class="focus" required>
-
-                    <label for="userPhoneNumber">PHONE NUMBER</label>
-                    <input id="userPhoneNumber" type="text" placeholder="+1 555 0125" class="focus" required>
-    
-    
-                    <label for="userPasswordConfirm">CONFIRM PASSWORD</label>
-                    <input id="userPasswordConfirm" class="error" type="password" placeholder="********" required>
+                <div class="form-item-row " id="rowPassword">
+                    <div class="form-item">
+                        <label for="userPassword">PASSWORD</label>
+                        <input id="userPassword" class="error" type="password" placeholder="********" required>
+                        <p id="errorMatch" class="hidden unmatch">Password don't match</p>
+                    </div>
+                        
+                    <div class="form-item">
+                        <label for="userPasswordConfirm">CONFIRM PASSWORD</label>
+                        <input id="userPasswordConfirm" class="error" type="password" placeholder="********" required>
+                    </div>
                 </div>
+
 
             </form>
 

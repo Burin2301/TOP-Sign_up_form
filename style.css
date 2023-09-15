@@ -17,6 +17,7 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: row;
+    overflow-y: hidden;
 }
 
 /* LEFT SIDE */
@@ -80,22 +81,28 @@ body{
 
 .log-in-form{
     background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: baseline;
+    display: grid;
     padding: 10px 30% 20px 50px;
-    overflow-y: scroll;
 }
 .new-user-form{
     height: 100%;
     width: 80%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: start;
     justify-content: space-between;
     column-gap: 60px;
 }
+.form-item{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+.form-item-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 h2{
     margin-bottom: 20px;
 }
@@ -109,12 +116,6 @@ input{
 label{
     font-weight: 600;
 }
-.division{
-    display: flex;
-    flex-direction: column;
-    height: 100px;
-}
-
 
 
 
@@ -156,4 +157,11 @@ label{
     color: var(--focus);
     box-shadow: 5px 5px;
     border-color: var(--focus);
+}
+
+.unmatch{
+    color: var(--red);
+}
+.hidden{
+    display: none;
 }
